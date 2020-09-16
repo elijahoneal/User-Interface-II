@@ -74,14 +74,24 @@ header{
     width:90%;
     margin: 5% auto;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.8rem;
     color:green;
 }
+.logo{
+    font-size:4rem;
+    width:30%;
+   
+    
+}
 nav{
-    width:70%;
+    width:60%;
     display:flex;
     justify-content: flex-end;
+    
+}
+.mobile{
+    display:none;
 }
 .link{
     width:20%;
@@ -159,16 +169,18 @@ footer{
     align-items:center;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
     header{
-       
+       display:flex;
+       flex-direction: column;
+       align-items: center;
     }
     .logo{
         display:flex;
         justify-content: center;
-        font-size:3rem;
+        font-size:4rem;
         width: 50%;
-        border: 1px solid green;
+        
     }
     nav{
         display:flex;
@@ -178,4 +190,36 @@ footer{
         width:50%;
     }
 
+    .project{
+        width: 50%;
+        margin: 0;
+        padding:5%;
+    }
+}
+@media only screen and (max-width:500px){
+    .standard{
+        display:none;
+    }
+    header{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+     }
+     .logo{
+         width:70%;
+         justify-content: flex-start;
+     }
+     .mobile{
+         width:20%;
+         display:flex;
+         flex-direction: column;
+     }
+    .nav-line{
+        width:4rem;
+        height:0.6rem;
+        background-color:green;
+        margin-bottom:0.4rem;
+
+    }
 }
