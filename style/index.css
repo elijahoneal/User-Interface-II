@@ -153,9 +153,27 @@ button:hover{
     height:auto;
     margin:5% auto;
     text-align:center;
-    font-size: 1.6rem;
+   
 }
 
+.project:hover{
+    cursor: pointer;
+}
+
+.item{
+    width:40rem;
+    max-height:40rem;
+    padding:3rem 3rem 0;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+h4{
+    margin:3rem 0;
+    font-size:3rem;
+    
+}
 
 footer{
     width:100%;
